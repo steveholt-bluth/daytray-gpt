@@ -1,0 +1,8 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@github.com:steveholt-bluth/daytray-gpt.git
+	fetch = +refs/heads/*:refs/remotes/origin/*

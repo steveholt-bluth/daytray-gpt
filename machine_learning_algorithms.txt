@@ -1,0 +1,6 @@
+1. Deep Reinforcement Learning for Automated Stock Trading
+2. Machine Learning for Trading Specialization - Coursera
+3. Machine Learning for Trading
+4. CS 7646: Machine Learning for Trading | OMSCS - gatech.edu
+5. How to Use Algorithmic Trading With Machine Learning in Python
+6. Machine Learning Algorithms For Trading: A Detailed Overview
