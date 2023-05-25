@@ -1,4 +1,3 @@
-# Import necessary libraries
 import yfinance as yf
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
@@ -6,6 +5,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 import pandas as pd
 from sklearn.impute import SimpleImputer
+import joblib
 
 def preprocess_data(stocks, start_date, end_date):
     # Download data for stocks
@@ -90,9 +90,12 @@ def main():
     train_data, test_data = preprocess_data(stocks, start_date, end_date)
     # Create and train model
     model = create_and_train_model(train_data)
+    # Save the trained model
+    joblib.dump(model, 'trained_model.pkl')
     # Make predictions
     predictions, accuracy = make_predictions(model, test_data)
     # Print accuracy
     print('Accuracy:', accuracy)
+
 if __name__ == '__main__':
     main()
